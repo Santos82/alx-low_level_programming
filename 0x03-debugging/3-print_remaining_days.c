@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include"main.h"
 
 
@@ -12,7 +12,7 @@
 
 void print_remaining _days(int month, int day, int year)
 {
-	if ((year % 4 == 0 || year % 400 == 0) && !( year % 100 == 0))
+	if (year % 4 == 0 || (year % 400 == 0 && year % 100 == 0))
 	{
 		if (month > 2 && day >= 60)
 		{
@@ -37,4 +37,3 @@ void print_remaining _days(int month, int day, int year)
 		}
 	}
 }
-
